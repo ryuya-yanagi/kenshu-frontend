@@ -1,1 +1,56 @@
-<h1>Hello World!</h1>
+<!DOCTYPE html>
+<html lang="ja">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Kenshu Frontend</title>
+		<link rel="stylesheet" href="styles/css/utils/reset.css">
+		<link rel="stylesheet" href="styles/css/utils/layouts.css">
+		<link rel="stylesheet" href="styles/css/utils/font.css">
+		<link rel="stylesheet" href="styles/css/part/header.css">
+		<link rel="stylesheet" href="styles/css/part/category_header.css">
+		<link rel="stylesheet" href="styles/css/part/ranking.css">
+		<link rel="stylesheet" href="styles/css/part/main.css">
+		<link rel="stylesheet" href="styles/css/part/sidebar.css">
+		<link rel="stylesheet" href="styles/css/part/footer.css">
+	</head>
+
+	<body>
+		<header class="header">
+			<div class="header-container">
+				<div class="header-small-container">
+					<a class="logo" href="#">
+						<img src="styles/img/logo_prtimes.svg" alt="PR TIMES" /><span>プレスリリース・ニュースリリース配信サービスのPR TIMES</span>
+					</a>
+					<ul class="release">
+						<li class="list-item"><a href="#">プレスリリースを受信</a></li>
+						<li class="list-item"><a href="#">配信を依頼</a></li>
+						<li class="list-item"><a href="#">ログイン</a></li>
+					</ul>
+					<div class="header-search_form">
+						<input type="text" placeholder="キーワードで検索" aria-label="キーワードで検索">
+						<button aria-label="検索"></button>
+					</div>
+				</div>
+				<nav class="main-header">
+					<ul class="nav-list">
+						<li class="list-item current-page"><a href="#">プレスリリース</a></li>
+						<li class="list-item"><a href="#">ランキング</a></li>
+						<li class="list-item"><a href="#">TV</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<div class="category-header"></div>
+		<div class="ranking"></div>
+		<main class="main">
+			<section class="main-contents">
+				<h2 class="main-contents__header">新着プレスリリース</h2>
+				<div class="main-contents__body"></div>
+			</section>
+			<aside class="sidemenu"></aside>
+		</main>
+		<footer class="footer"></footer>
+	</body>
+
+</html>

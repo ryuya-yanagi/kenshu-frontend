@@ -1,0 +1,100 @@
+.header-container {
+  width: 1126px;
+  margin: 0 auto;
+}
+
+.header-small-container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 5px;
+}
+
+.logo {
+  color: #BFC9D7;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  margin-left: 10px;
+}
+
+.release {
+  display: block;
+  margin-left: 36px;
+  background: #345584;
+  border-radius: 4px;
+  padding: 6px 15px 8px;
+}
+
+.header-search_form {
+  margin-left: 11px;
+  display: flex;
+}
+
+.header-search_form input {
+  appearance: none;
+  line-height: 30px;
+  height: 30px;
+  font-size: 13px;
+  padding-left: 15px;
+  border-radius: 4px 0 0 4px;
+  width: 258px;
+  outline: 0;
+  border: inherit;
+}
+
+.header-search_form input::placeholder {
+  color: #bbb;
+}
+
+.header-search_form button {
+  background-color: #3081c9;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 4px 4px 0;
+  background-image: url("https://prtimes.jp/src/images/prtimes-jp/html/icon_search.svg");
+  background-repeat: no-repeat;
+  background-position: 5px 5px;
+  outline: 0;
+  appearance: none;
+  text-transform: none;
+  border: inherit;
+}
+
+.main-header {
+  float: left;
+}
+
+.list-item {
+  display: inline;
+}
+
+.list-item a {
+  color: #BFC9D7;
+}
+
+.list-item a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #BFC9D7;
+  position: absolute;
+  top: 0;
+  right: 7px;
+}
+
+.list-item:last-child a::after {
+  display: none;
+}
+
+.list-item:not(:last-child) {
+  position: relative;
+  padding-right: 15px;
+}
+
+.current-page a {
+  font-weight: 700;
+  color: #fff;
+}
