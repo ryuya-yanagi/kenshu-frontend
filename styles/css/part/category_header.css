@@ -1,0 +1,18 @@
+.category-header {
+  background-color: #fff;
+  padding: 13px 0 10px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+}
+
+.category-list_item {
+  display: inline;
+  padding: 0 10px
+}
+
+.category-list_item a {
+  color: #294c7a;
+}
