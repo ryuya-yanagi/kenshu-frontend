@@ -75,4 +75,5 @@
   border: inherit;
   outline: 0;
   appearance: none;
+  cursor: pointer;
 }

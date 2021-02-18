@@ -9,13 +9,13 @@
   padding: 12px 0 5px;
 }
 
-.logo {
-  color: #BFC9D7;
+.header-logo {
   display: flex;
   align-items: center;
 }
 
-.logo span {
+.header-logo span {
+  color: #BFC9D7;
   margin-left: 10px;
 }
 
@@ -31,8 +31,12 @@
   display: inline;
 }
 
-.list-item a {
+.release-list_item a {
   color: #BFC9D7;
+}
+
+.release-list_item a:hover {
+  color: #fff;
 }
 
 .release-list_item a::after {
@@ -88,6 +92,7 @@
   appearance: none;
   text-transform: none;
   border: inherit;
+  cursor: pointer;
 }
 
 .main-header {
