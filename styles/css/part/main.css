@@ -1,14 +1,11 @@
 .main-contents {
   width: 779px;
-  margin-bottom: 103px;
 }
 
 .main-contents_header {
-  margin-top: 40px;
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-  color: #3b3b3b;
 }
 
 .main-contents_body {
@@ -38,7 +35,6 @@
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
-  color: #3b3b3b;
 }
 
 .main-contents_article_info {

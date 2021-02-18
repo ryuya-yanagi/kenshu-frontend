@@ -15,7 +15,12 @@
 .main {
   display: flex;
   width: 1127px;
-  margin: 0 auto;
+  margin: 40px auto 103px;
+}
+
+.sidemenu {
+  width: 312px;
+  margin-left: 37px;
 }
 
 .footer {
