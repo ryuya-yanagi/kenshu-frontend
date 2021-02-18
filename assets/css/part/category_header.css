@@ -11,7 +11,8 @@
 .category-list_item {
   display: inline;
   font-size: 1.3rem;
-  padding: 0 10px
+  padding: 0 10px;
+  color: #294c7a;
 }
 
 .category-list_item:first-child {
@@ -20,8 +21,4 @@
 
 .category-list_item:hover {
   font-weight: 700;
-}
-
-.category-list_item a {
-  color: #294c7a;
 }
