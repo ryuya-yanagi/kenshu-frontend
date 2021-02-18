@@ -10,7 +10,16 @@
 
 .category-list_item {
   display: inline;
+  font-size: 1.3rem;
   padding: 0 10px
+}
+
+.category-list_item:first-child {
+  font-weight: 700;
+}
+
+.category-list_item:hover {
+  font-weight: 700;
 }
 
 .category-list_item a {
