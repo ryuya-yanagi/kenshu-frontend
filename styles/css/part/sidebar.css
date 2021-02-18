@@ -31,7 +31,15 @@
   background-color: #f1f1f1;
 }
 
+.sidemenu_keywords-item:not(:last-child):hover {
+  font-weight: 600;
+}
+
 .sidemenu_keywords-item:last-child {
   background-color: #fff;
   border: 1px solid #f1f1f1;
+}
+
+.sidemenu_keywords-item:last-child:hover {
+  color: rgb(35, 164, 187);
 }
