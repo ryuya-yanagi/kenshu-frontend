@@ -8,3 +8,10 @@ body {
   color: #3b3b3b;
   font-size: 1.2rem;
 }
+
+a,
+a:hover,
+a:active,
+a:visited {
+  color: inherit;
+}
