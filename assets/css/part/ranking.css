@@ -33,6 +33,18 @@
   overflow: hidden;
 }
 
+.ranking-list_item_image img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.ranking-list_item_image img:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
 .ranking-list_item_image span {
   position: absolute;
   left: 0;
@@ -64,6 +76,13 @@
   color: #333;
   font-size: 1.3rem;
   line-height: 18px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.ranking-list_item_title:hover {
+  color: rgb(35, 164, 187);
+  text-decoration: underline rgb(35, 164, 187);
 }
 
 .ranking-list_item_info {

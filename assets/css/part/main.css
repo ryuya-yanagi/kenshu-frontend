@@ -35,6 +35,13 @@
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 22px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out
+}
+
+.main-contents_article_title:hover {
+  color: rgb(35, 164, 187);
+  text-decoration: underline rgb(35, 164, 187);
 }
 
 .main-contents_article_info {
@@ -61,6 +68,21 @@
 
 .main-contents_article_image {
   margin-left: 15px;
+  width: 100px;
+  height: 66px;
+  overflow: hidden;
+}
+
+.main-contents_article_image img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.main-contents_article_image img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .main-contents_tools {
