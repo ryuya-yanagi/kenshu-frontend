@@ -15,7 +15,7 @@
 }
 
 .footer-title {
-  font-size: 13px;
+  font-size: 1.3rem;
   color: #000;
 }
 
@@ -33,7 +33,7 @@
 
 .footer-list_item {
   color: #797979;
-  font-size: 12px;
+  font-size: 1.2rem;
   height: 12px;
   list-style: none;
   width: 281px;
@@ -53,7 +53,7 @@
 
 .footer-nav_company_list_item {
   display: inline;
-  font-size: 12px;
+  font-size: 1.2rem;
 }
 
 .footer-nav_company_list_item:not(:first-child) {
@@ -61,6 +61,5 @@
 }
 
 .footer-nav_company_copyright {
-  font-size: 11px;
-  height: 11px;
+  font-size: 1.1rem;
 }

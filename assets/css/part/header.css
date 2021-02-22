@@ -17,6 +17,7 @@
 .header-logo_text {
   color: #BFC9D7;
   margin-left: 10px;
+  font-size: 1.2rem;
 }
 
 .release {
@@ -24,11 +25,12 @@
   margin-left: 36px;
   background: #345584;
   border-radius: 4px;
-  padding: 6px 15px 8px;
+  padding: 8px 15px 7px;
 }
 
 .release-list_item {
   display: inline;
+  font-size: 1.3rem;
 }
 
 .release-list_item a {
@@ -68,7 +70,7 @@
   appearance: none;
   line-height: 30px;
   height: 30px;
-  font-size: 13px;
+  font-size: 1.3rem;
   padding-left: 15px;
   border-radius: 4px 0 0 4px;
   width: 258px;
@@ -101,6 +103,7 @@
 
 .nav-list_item {
   display: inline;
+  font-size: 1.3rem;
 }
 
 .nav-list_item a {
