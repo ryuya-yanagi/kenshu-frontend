@@ -14,7 +14,7 @@
 
 .ranking-list_item {
   display: inline;
-  width: 181px;
+  /* width: 181px; */
   margin: 22px 0;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .ranking-list_item_image {
-  width: 181px;
+  /* width: 181px; */
   height: 100px;
   position: relative;
   overflow: hidden;
@@ -52,7 +52,7 @@
   width: 24px;
   height: 24px;
   font-size: 1.7rem;
-  line-height: 25px;
+  line-height: 25;
   font-weight: 700;
   background-color: #294C7A;
   color: #fff;
@@ -75,7 +75,7 @@
 .ranking-list_item_title {
   color: #333;
   font-size: 1.3rem;
-  line-height: 18px;
+  line-height: 18;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
 }
