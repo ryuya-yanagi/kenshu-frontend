@@ -20,7 +20,6 @@
 
 .main-contents_article {
   display: flex;
-  width: 380px;
   height: 118px;
   padding: 15px 0 16px;
   border-bottom: 1px solid #e4e4e4;
@@ -34,7 +33,7 @@
   height: 66px;
   font-size: 1.4rem;
   font-weight: bold;
-  line-height: 1.5;
+  line-height: 1.6;
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out
 }
@@ -46,7 +45,7 @@
 
 .main-contents_article_info {
   display: flex;
-  margin-top: 7px;
+  padding-top: 4px;
 }
 
 .main-contents_article_time {

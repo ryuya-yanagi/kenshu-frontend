@@ -14,7 +14,6 @@
 
 .ranking-list_item {
   display: inline;
-  /* width: 181px; */
   margin: 22px 0;
 }
 
@@ -27,7 +26,7 @@
 }
 
 .ranking-list_item_image {
-  /* width: 181px; */
+  width: 181px;
   height: 100px;
   position: relative;
   overflow: hidden;
@@ -68,7 +67,6 @@
 }
 
 .ranking-list_item_head {
-  width: 161px;
   height: 57px;
 }
 
