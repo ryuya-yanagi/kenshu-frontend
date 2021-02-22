@@ -110,6 +110,11 @@
   color: #BFC9D7;
 }
 
+.nav-list_item a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
 .nav-list_item a::after {
   content: "";
   display: block;

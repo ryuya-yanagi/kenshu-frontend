@@ -40,6 +40,11 @@
   margin-bottom: 18px;
 }
 
+.footer-list_item a:hover {
+  color: #000;
+  text-decoration: underline #000;
+}
+
 .footer-nav_company {
   height: 66px;
   color: #797979;
@@ -54,6 +59,11 @@
 .footer-nav_company_list_item {
   display: inline;
   font-size: 1.2rem;
+}
+
+.footer-nav_company_list_item a:hover {
+  color: #000;
+  text-decoration: underline #000;
 }
 
 .footer-nav_company_list_item:not(:first-child) {
