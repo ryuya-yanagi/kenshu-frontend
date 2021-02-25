@@ -1,0 +1,140 @@
+.header-container {
+  width: 1126px;
+  margin: 0 auto;
+}
+
+.header-small-container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 5px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo_text {
+  color: #BFC9D7;
+  margin-left: 18px;
+  font-size: 1.2rem;
+}
+
+.release {
+  display: block;
+  margin-left: 44px;
+  background: #345584;
+  border-radius: 4px;
+  padding: 6px 15px 5px;
+}
+
+.release-list_item {
+  display: inline;
+  font-size: 1.3rem;
+}
+
+.release-list_item a {
+  color: #BFC9D7;
+}
+
+.release-list_item a:hover {
+  color: #fff;
+}
+
+.release-list_item a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #BFC9D7;
+  position: absolute;
+  top: 0;
+  right: 7px;
+}
+
+.release-list_item:last-child a::after {
+  display: none;
+}
+
+.release-list_item:not(:last-child) {
+  position: relative;
+  padding-right: 15px;
+}
+
+.header-search_form {
+  margin-left: 15px;
+  display: flex;
+}
+
+.header-search_form input {
+  appearance: none;
+  height: 30px;
+  font-size: 1.3rem;
+  padding-left: 15px;
+  border-radius: 4px 0 0 4px;
+  width: 258px;
+  outline: 0;
+  border: inherit;
+}
+
+.header-search_form input::placeholder {
+  color: #bbb;
+}
+
+.header-search_form button {
+  background-color: #3081c9;
+  width: 30px;
+  height: 30px;
+  border-radius: 0 4px 4px 0;
+  background-image: url(../../img/search_icon.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+  outline: 0;
+  appearance: none;
+  text-transform: none;
+  border: inherit;
+  cursor: pointer;
+}
+
+.main-header {
+  float: left;
+}
+
+.nav-list_item {
+  display: inline;
+  font-size: 1.3rem;
+}
+
+.nav-list_item a {
+  color: #BFC9D7;
+}
+
+.nav-list_item a:hover {
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-list_item a::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background: #BFC9D7;
+  position: absolute;
+  top: 0;
+  right: 7px;
+}
+
+.nav-list_item:last-child a::after {
+  display: none;
+}
+
+.nav-list_item:not(:last-child) {
+  position: relative;
+  padding-right: 15px;
+}
+
+.current-page a {
+  font-weight: 700;
+  color: #fff;
+}
