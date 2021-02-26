@@ -430,12 +430,12 @@ html {
   padding-top: 5px;
 }
 
-.sidemenu__keywords {
+.sidemenu-keywords {
   display: flex;
   flex-wrap: wrap;
 }
 
-.sidemenu__keywords-item {
+.sidemenu-keywords__item {
   font-size: 1.2rem;
   display: inline;
   border-radius: 11px;
@@ -443,20 +443,20 @@ html {
   margin: 0 10px 9px 0;
 }
 
-.sidemenu__keywords-item:not(:last-child) {
+.sidemenu-keywords__item:not(:last-child) {
   background-color: #f1f1f1;
 }
 
-.sidemenu__keywords-item:not(:last-child):hover {
+.sidemenu-keywords__item:not(:last-child):hover {
   font-weight: 600;
 }
 
-.sidemenu__keywords-item:last-child {
+.sidemenu-keywords__item:last-child {
   background-color: #fff;
   border: 1px solid #f1f1f1;
 }
 
-.sidemenu__keywords-item:last-child:hover {
+.sidemenu-keywords__item:last-child:hover {
   color: rgb(35, 164, 187);
 }
 
