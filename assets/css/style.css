@@ -414,28 +414,28 @@ html {
   cursor: pointer;
 }
 
-.sidemenu_header-title {
+.sidemenu__header--title {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.5;
 }
 
-.sidemenu_body {
+.sidemenu__body {
   margin-top: 40px;
   border-bottom: 1px solid #e4e4e4;
 }
 
-.sidemenu_body-wrap {
+.sidemenu__body-wrap {
   margin-bottom: 10px;
   padding-top: 5px;
 }
 
-.sidemenu_keywords {
+.sidemenu__keywords {
   display: flex;
   flex-wrap: wrap;
 }
 
-.sidemenu_keywords-item {
+.sidemenu__keywords-item {
   font-size: 1.2rem;
   display: inline;
   border-radius: 11px;
@@ -443,20 +443,20 @@ html {
   margin: 0 10px 9px 0;
 }
 
-.sidemenu_keywords-item:not(:last-child) {
+.sidemenu__keywords-item:not(:last-child) {
   background-color: #f1f1f1;
 }
 
-.sidemenu_keywords-item:not(:last-child):hover {
+.sidemenu__keywords-item:not(:last-child):hover {
   font-weight: 600;
 }
 
-.sidemenu_keywords-item:last-child {
+.sidemenu__keywords-item:last-child {
   background-color: #fff;
   border: 1px solid #f1f1f1;
 }
 
-.sidemenu_keywords-item:last-child:hover {
+.sidemenu__keywords-item:last-child:hover {
   color: rgb(35, 164, 187);
 }
 
