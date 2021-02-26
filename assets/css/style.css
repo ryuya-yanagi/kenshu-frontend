@@ -187,18 +187,25 @@ html {
   justify-content: center;
 }
 
-.category-list_item {
+.category-list__item {
   display: inline;
+  margin-right: 20px;
+}
+
+.category-list__item:last-child {
+  margin-right: 0;
+}
+
+.category-list__link {
   font-size: 1.3rem;
-  padding: 0 10px;
   color: #294c7a;
 }
 
-.category-list_item:first-child {
+.category-list__link.is-link-active {
   font-weight: 700;
 }
 
-.category-list_item:hover {
+.category-list__link:hover {
   font-weight: 700;
 }
 
