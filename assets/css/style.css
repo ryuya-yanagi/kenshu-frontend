@@ -2,17 +2,7 @@
 
 html {
   font-size: 62.5%;
-}
-
-body {
   color: #3b3b3b;
-}
-
-a,
-a:hover,
-a:active,
-a:visited {
-  color: inherit;
 }
 
 .header {
@@ -51,24 +41,24 @@ a:visited {
   margin: 0 auto;
 }
 
-.header-small-container {
+.header-container--small {
   display: flex;
   align-items: center;
   padding: 12px 0 5px;
 }
 
-.header-logo {
+.header-logo__link {
   display: flex;
   align-items: center;
 }
 
-.header-logo_text {
+.header-logo__text {
   color: #BFC9D7;
   margin-left: 18px;
   font-size: 1.2rem;
 }
 
-.release {
+.release-list {
   display: block;
   margin-left: 44px;
   background: #345584;
@@ -76,20 +66,20 @@ a:visited {
   padding: 6px 15px 5px;
 }
 
-.release-list_item {
+.release-list__item {
   display: inline;
   font-size: 1.3rem;
 }
 
-.release-list_item a {
+.release-list__link {
   color: #BFC9D7;
 }
 
-.release-list_item a:hover {
+.release-list__link:hover {
   color: #fff;
 }
 
-.release-list_item a::after {
+.release-list__link::after {
   content: "";
   display: block;
   width: 1px;
@@ -100,21 +90,21 @@ a:visited {
   right: 7px;
 }
 
-.release-list_item:last-child a::after {
+.release-list__item:last-child>.release-list__link::after {
   display: none;
 }
 
-.release-list_item:not(:last-child) {
+.release-list__item:not(:last-child) {
   position: relative;
   padding-right: 15px;
 }
 
-.header-search_form {
+.header-search__form {
   margin-left: 15px;
   display: flex;
 }
 
-.header-search_form input {
+.header-search__input {
   appearance: none;
   height: 30px;
   font-size: 1.3rem;
@@ -125,11 +115,11 @@ a:visited {
   border: inherit;
 }
 
-.header-search_form input::placeholder {
+.header-search__input::placeholder {
   color: #bbb;
 }
 
-.header-search_form button {
+.header-search__button {
   background-color: #3081c9;
   width: 30px;
   height: 30px;
@@ -148,21 +138,21 @@ a:visited {
   float: left;
 }
 
-.nav-list_item {
+.main-header__item {
   display: inline;
   font-size: 1.3rem;
 }
 
-.nav-list_item a {
+.main-header__link {
   color: #BFC9D7;
 }
 
-.nav-list_item a:hover {
+.main-header__link:hover {
   color: #fff;
   font-weight: 700;
 }
 
-.nav-list_item a::after {
+.main-header__link::after {
   content: "";
   display: block;
   width: 1px;
@@ -173,16 +163,16 @@ a:visited {
   right: 7px;
 }
 
-.nav-list_item:last-child a::after {
+.main-header__item:last-child>.main-header__link::after {
   display: none;
 }
 
-.nav-list_item:not(:last-child) {
+.main-header__item:not(:last-child) {
   position: relative;
   padding-right: 15px;
 }
 
-.current-page a {
+.main-header__link.is-link-active {
   font-weight: 700;
   color: #fff;
 }
