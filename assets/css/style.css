@@ -460,6 +460,10 @@ html {
   color: rgb(35, 164, 187);
 }
 
+.sidemenu-keywords__link {
+  color: inherit;
+}
+
 .footer-container {
   width: 1126px;
   margin: 0 auto;
