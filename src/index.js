@@ -1,3 +1,4 @@
 import "./sass/reset.scss"
 import "./sass/style.scss"
 import "./sass/variables.scss"
+import "./img/search_icon.png"

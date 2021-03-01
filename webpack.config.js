@@ -44,6 +44,7 @@ module.exports = {
           {
             loader: "css-loader",
             options: {
+              url: false,
               // ソースマップを有効に
               sourceMap: enabledSourceMap,
               // postcss-loader と sass-loader の場合は2を指定
@@ -97,7 +98,8 @@ module.exports = {
             loader: 'file-loader',
             options: {
               // 画像ファイルの名前とパスの設定
-              name: 'images/[name].[ext]'
+              name: '[name].[ext]',
+              outputPath: 'img/',
             }
           }
         ],
