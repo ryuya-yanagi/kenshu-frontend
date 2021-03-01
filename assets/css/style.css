@@ -47,12 +47,12 @@ html {
   padding: 12px 0 5px;
 }
 
-.header-logo__link {
+.header-logo {
   display: flex;
   align-items: center;
 }
 
-.header-logo__text {
+.header-logo__description {
   color: #BFC9D7;
   margin-left: 18px;
   font-size: 1.2rem;
@@ -223,13 +223,13 @@ html {
   justify-content: center;
 }
 
-.ranking-list__item {
+.ranking-card {
   margin: 22px 0;
   list-style: none;
   width: 181px;
 }
 
-.ranking-list__item:not(:first-child) {
+.ranking-card:not(:first-child) {
   margin-left: 8px;
 }
 
