@@ -1,11 +1,15 @@
 // 設定参考URL https://www.webdesignleaves.com/pr/css/sass_webpack.html
-//path モジュールの読み込み
+// path モジュールの読み込み
 const path = require('path');
-//MiniCssExtractPlugin の読み込み
+// MiniCssExtractPlugin の読み込み
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 // CleanWebpackPlugin の読み込み
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-//production モード以外の場合、変数 enabledSourceMap は true
+// HTMLWebpackPlugin の読み込み
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+// CopyFilePlugin の読み込み
+const CopyFilePlugin = require('copy-webpack-plugin');
+// production モード以外の場合、変数 enabledSourceMap は true
 const enabledSourceMap = process.env.NODE_ENV !== 'production';
 
 module.exports = {
@@ -99,7 +103,7 @@ module.exports = {
             options: {
               // 画像ファイルの名前とパスの設定
               name: '[name].[ext]',
-              outputPath: 'img/',
+              outputPath: 'assets/img/',
             }
           }
         ],
@@ -113,7 +117,19 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       // 抽出する CSS のファイル名
-      filename: 'css/style.css'
+      filename: 'assets/css/style.css'
+    }),
+    new HtmlWebpackPlugin({
+      template: 'index.html'
+    }),
+    new CopyFilePlugin({
+      patterns: [
+        {
+          context: 'public',
+          from: 'images/*',
+          to: path.resolve(__dirname, 'dist')
+        }
+      ]
     }),
   ],
   //source-map タイプのソースマップを出力

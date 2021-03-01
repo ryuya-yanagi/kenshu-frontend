@@ -1,4 +1,4 @@
-import "./sass/reset.scss"
-import "./sass/style.scss"
-import "./sass/variables.scss"
-import "./img/search_icon.png"
+import "./assets/sass/reset.scss"
+import "./assets/sass/style.scss"
+import "./assets/sass/variables.scss"
+import "./assets/img/search_icon.png"
