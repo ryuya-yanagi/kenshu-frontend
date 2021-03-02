@@ -1,101 +1,100 @@
 .ranking {
   width: 100%;
   background-color: #f2f2f2;
-}
 
-.ranking-container {
-  width: 1126px;
-  margin: 0 auto;
-}
+  &-container {
+    width: $layout-width;
+    margin: 0 auto;
+  }
 
-.ranking-list {
-  display: flex;
-  justify-content: center;
-}
+  &-list {
+    display: flex;
+    justify-content: center;
+  }
 
-.ranking-card {
-  margin: 22px 0;
-  list-style: none;
-  width: 181px;
-}
+  &-card {
+    margin: 22px 0;
+    list-style: none;
+    width: 181px;
 
-.ranking-card:not(:first-child) {
-  margin-left: 8px;
-}
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
 
-.ranking-card__image-wrap {
-  height: 100px;
-  position: relative;
-  overflow: hidden;
-}
+    &__image {
+      transform: scale(1);
+      transition: .3s ease-in-out;
 
-.ranking-card__image {
-  -webkit-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
+      &:hover {
+        transform: scale(1.2);
+      }
 
-.ranking-card__image:hover {
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
+      &-wrap {
+        height: 100px;
+        position: relative;
+        overflow: hidden;
+      }
 
-.ranking-card__image-rank-number {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 24px;
-  font-size: 1.7rem;
-  line-height: 1.5;
-  font-weight: 700;
-  background-color: #294c7a;
-  color: #fff;
-  font-style: italic;
-  text-align: center;
-  letter-spacing: 3px;
-  z-index: 1;
-}
+      &-rank-number {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 24px;
+        height: 24px;
+        font-size: 1.7rem;
+        line-height: 1.5;
+        font-weight: 700;
+        background-color: #294c7a;
+        color: #fff;
+        font-style: italic;
+        text-align: center;
+        letter-spacing: 3px;
+        z-index: 1;
+      }
+    }
 
-.ranking-card__content {
-  background-color: #fff;
-  padding: 9px 10px;
-}
+    &__content {
+      background-color: $color-trueWhite;
+      padding: 9px 10px;
+    }
 
-.ranking-card__title {
-  color: #333;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  font-weight: 400;
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  height: 57px;
-}
+    &__title {
+      color: #333;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      font-weight: 400;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out;
+      height: 57px;
 
-.ranking-card__title:hover {
-  color: rgb(35, 164, 187);
-  text-decoration: underline rgb(35, 164, 187);
-}
+      &:hover {
+        color: $color-accent;
+        text-decoration: underline $color-accent;
+      }
+    }
 
-.ranking-card__info {
-  color: #a2a2a2;
-}
+    &__info {
+      color: #a2a2a2;
+    }
 
-.ranking-card__time-wrap {
-  display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-}
+    &__time {
+      &-wrap {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+      }
 
-.ranking-card__time-image {
-  margin-right: 5px;
-}
+      &-image {
+        margin-right: 5px;
+      }
+    }
 
-.ranking-card__company {
-  font-size: 1.3rem;
-}
+    &__company {
+      font-size: 1.3rem;
+    }
 
-.ranking-card__view {
-  font-size: 1.2rem;
+    &__view {
+      font-size: 1.2rem;
+    }
+  }
 }
