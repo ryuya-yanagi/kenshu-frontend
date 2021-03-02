@@ -90,6 +90,7 @@ module.exports = {
               sourceMap: enabledSourceMap,
             },
           },
+          'import-glob-loader'
         ],
       },
       // file-loader の設定を追加

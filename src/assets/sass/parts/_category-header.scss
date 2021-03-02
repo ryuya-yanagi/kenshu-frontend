@@ -1,0 +1,32 @@
+.category-header {
+  width: 100%;
+  background-color: #fff;
+  padding: 13px 0 10px;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+}
+
+.category-list__item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.category-list__item:last-child {
+  margin-right: 0;
+}
+
+.category-list__link {
+  font-size: 1.3rem;
+  color: #294c7a;
+}
+
+.category-list__link.is-link-active {
+  font-weight: 700;
+}
+
+.category-list__link:hover {
+  font-weight: 700;
+}
