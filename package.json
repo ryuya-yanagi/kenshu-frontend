@@ -10,7 +10,9 @@
     "watch": "webpack --mode development --watch",
     "sass-ver": "sass --version",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "lint:css": "stylelint **/*.{css,scss,sass}",
+    "lint:css-fix": "stylelint --fix **/*.{css,scss,sass}"
   },
   "repository": {
     "type": "git",
@@ -38,6 +40,9 @@
     "postcss-sort-media-queries": "^3.4.3",
     "sass": "^1.32.8",
     "sass-loader": "^11.0.1",
+    "stylelint": "^13.11.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.19.0",
     "webpack": "^5.24.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
