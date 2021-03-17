@@ -3,143 +3,143 @@
   height: 75px;
   background: $bg-header;
 
-  &-container {
+  &__container {
     width: $layout-width;
     margin: 0 auto;
     display: flex;
     align-items: center;
     padding: 12px 0 5px;
   }
+}
 
-  &-logo {
-    display: flex;
-    align-items: center;
+.header-logo {
+  display: flex;
+  align-items: center;
 
-    &__description {
-      color: $color-gray;
-      margin-left: 18px;
-      font-size: 1.2rem;
-    }
+  &__description {
+    color: $color-gray;
+    margin-left: 18px;
+    font-size: 1.2rem;
+  }
+}
+
+.header-member {
+  margin-left: 44px;
+
+  &__list {
+    display: block;
+    background-color: #345584;
+    border-radius: 4px;
+    padding: 9px 15px 8px;
   }
 
-  &-member {
-    margin-left: 44px;
+  &__item {
+    display: inline;
+    font-size: 1.3rem;
 
-    &__list {
+    &::after {
+      content: '';
       display: block;
-      background-color: #345584;
-      border-radius: 4px;
-      padding: 9px 15px 8px;
+      width: 1px;
+      height: 13px;
+      background: $color-gray;
+      position: absolute;
+      top: 0;
+      right: 7px;
     }
 
-    &__item {
-      display: inline;
-      font-size: 1.3rem;
-
-      &::after {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 13px;
-        background: $color-gray;
-        position: absolute;
-        top: 0;
-        right: 7px;
-      }
-
-      &:last-child>.header-member__link::after {
-        display: none;
-      }
-
-      &:not(:last-child) {
-        position: relative;
-        padding-right: 15px;
-      }
+    &:last-child>.header-member__link::after {
+      display: none;
     }
 
-    &__link {
-      color: $color-gray;
-
-      &:hover {
-        color: $color-trueWhite;
-      }
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 15px;
     }
   }
 
-  &-search {
-    margin-left: 15px;
-    display: flex;
+  &__link {
+    color: $color-gray;
 
-    &__input {
-      appearance: none;
-      height: 30px;
-      font-size: 1.3rem;
-      padding-left: 15px;
-      border-radius: 4px 0 0 4px;
-      width: 258px;
-      outline: 0;
-      border: inherit;
-      background-color: $color-trueWhite;
-
-      &::placeholder {
-        color: #bbb;
-      }
+    &:hover {
+      color: $color-trueWhite;
     }
+  }
+}
 
-    &__btn {
-      background-color: $btn-primary;
-      width: 30px;
-      height: 30px;
-      border-radius: 0 4px 4px 0;
-      background-image: url(../img/search_icon.png);
-      background-repeat: no-repeat;
-      background-position: 6px 6px;
-      outline: 0;
-      appearance: none;
-      text-transform: none;
-      border: inherit;
-      cursor: pointer;
+.header-search {
+  margin-left: 15px;
+  display: flex;
+
+  &__input {
+    appearance: none;
+    height: 30px;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    border-radius: 4px 0 0 4px;
+    width: 258px;
+    outline: 0;
+    border: inherit;
+    background-color: $color-trueWhite;
+
+    &::placeholder {
+      color: #bbb;
     }
   }
 
-  &-nav {
-    width: $layout-width;
-    margin: 0 auto;
-    padding-top: 5px;
+  &__btn {
+    background-color: $btn-primary;
+    width: 30px;
+    height: 30px;
+    border-radius: 0 4px 4px 0;
+    background-image: url(../img/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+    outline: 0;
+    appearance: none;
+    text-transform: none;
+    border: inherit;
+    cursor: pointer;
+  }
+}
 
-    &__item {
-      display: inline;
-      font-size: 1.3rem;
+.header-nav {
+  width: $layout-width;
+  margin: 0 auto;
+  padding-top: 5px;
 
-      &:not(:last-child) {
-        position: relative;
-        padding-right: 15px;
-      }
+  &__item {
+    display: inline;
+    font-size: 1.3rem;
+
+    &:not(:last-child) {
+      position: relative;
+      padding-right: 15px;
+    }
+  }
+
+  &__link {
+    color: $color-gray;
+
+    &.is-link-active {
+      font-weight: 700;
+      color: $color-trueWhite;
     }
 
-    &__link {
-      color: $color-gray;
+    &:hover {
+      color: $color-trueWhite;
+      font-weight: 700;
+    }
 
-      &.is-link-active {
-        font-weight: 700;
-        color: $color-trueWhite;
-      }
-
-      &:hover {
-        color: $color-trueWhite;
-        font-weight: 700;
-      }
-
-      &::after {
-        content: '';
-        display: block;
-        width: 1px;
-        height: 13px;
-        background: $color-gray;
-        position: absolute;
-        top: 0;
-        right: 7px;
-      }
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 13px;
+      background: $color-gray;
+      position: absolute;
+      top: 0;
+      right: 7px;
     }
   }
 }
