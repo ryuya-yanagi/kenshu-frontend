@@ -3,88 +3,88 @@
   height: 356px;
   background: #fafafa;
 
-  &__container {
+  &-container {
     width: $layout-width;
     margin: 0 auto;
     padding-top: 60px;
   }
 
-  &__nav {
+  &-nav {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e0e0e0;
   }
 
-  &__contents {
+  &-contents {
     height: 230px;
   }
 
-  &__title {
+  &-title {
     font-size: 1.3rem;
     font-weight: 400;
     color: $color-trueBlack;
   }
 
-  &__copyright {
-    font-size: 1.1rem;
-  }
-}
-
-.footer-list {
-  margin-top: 18px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100%;
-
-  &__wrapper {
+  &-list {
+    margin-top: 18px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__item {
+      color: #797979;
+      font-size: 1.2rem;
+      height: 12px;
+      list-style: none;
+      width: 281px;
+      margin-bottom: 18px;
+    }
+
+    &__link {
+      color: inherit;
+
+      &:hover {
+        color: $color-trueBlack;
+        text-decoration: underline $color-trueBlack;
+      }
+    }
   }
 
-  &__item {
+  &-terms {
+    height: 66px;
     color: #797979;
-    font-size: 1.2rem;
-    height: 12px;
-    list-style: none;
-    width: 281px;
-    margin-bottom: 18px;
-  }
 
-  &__link {
-    color: inherit;
-
-    &:hover {
-      color: $color-trueBlack;
-      text-decoration: underline $color-trueBlack;
+    &__list {
+      display: flex;
+      align-items: center;
+      height: 46px;
     }
-  }
-}
 
-.footer-terms {
-  height: 66px;
-  color: #797979;
+    &__item {
+      display: inline;
+      font-size: 1.2rem;
 
-  &__list {
-    display: flex;
-    align-items: center;
-    height: 46px;
-  }
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+    }
 
-  &__item {
-    display: inline;
-    font-size: 1.2rem;
+    &__link {
+      color: inherit;
 
-    &:not(:first-child) {
-      margin-left: 20px;
+      &:hover {
+        color: $color-trueBlack;
+        text-decoration: underline $color-trueBlack;
+      }
     }
   }
 
-  &__link {
-    color: inherit;
-
-    &:hover {
-      color: $color-trueBlack;
-      text-decoration: underline $color-trueBlack;
-    }
+  &-copyright {
+    font-size: 1.1rem;
   }
 }
