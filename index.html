@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Kenshu Frontend</title>
-  <link rel="stylesheet" href="assets/css/reset.css">
-  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
@@ -26,22 +24,14 @@
         <input class="header-search__input" type="text" placeholder="キーワードで検索" aria-label="キーワードで検索">
         <button class="header-search__btn" aria-label="検索"></button>
       </div>
-  </header>
-  <nav class="category-header">
-    <ul class="category-list">
-      <li class="category-list__item"><a class="category-list__link is-link-active" href="#">総合</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">テクノロジー</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">モバイル</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">アプリ</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">エンタメ</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">ビューティー</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">ファッション</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">ライフスタイル</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">ビジネス</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">グルメ</a></li>
-      <li class="category-list__item"><a class="category-list__link" href="#">スポーツ</a></li>
-    </ul>
-  </nav>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item"><a class="header-nav__link is-link-active" href="#">プレスリリース</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">ランキング</a></li>
+        <li class="header-nav__item"><a class="header-nav__link" href="#">TV</a></li>
+      </ul>
+    </nav>
   </header>
   <nav class="category-header">
     <ul class="category-header__list">
@@ -381,31 +371,31 @@
                 <div class="main-article__thumbnail">
                   <img class="main-article__img" src="images/new_press.png" alt="article image">
                 </div>
+              </div>
             </a>
           </article>
         </div>
       </div>
-  </div>
-  <div class="main-contents__more">
-    <button class="main-contents__more-btn">もっと見る</button>
-  </div>
-  </main>
-  <aside class="sidemenu">
-    <h3 class="sidemenu__header">
-      今注目のキーワード
-    </h3>
-    <div class="sidemenu__body">
-      <ul class="sidemenu-keywords">
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">桜</a></li>
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">令和</a></li>
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">テレワーク</a></li>
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">#AprilDream</a></li>
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">電子マネー</a></li>
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">令和</a></li>
-        <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">もっと見る</a></li>
-      </ul>
-    </div>
-  </aside>
+      <div class="main-contents__more">
+        <button class="main-contents__more-btn">もっと見る</button>
+      </div>
+    </main>
+    <aside class="sidemenu">
+      <h3 class="sidemenu__header">
+        今注目のキーワード
+      </h3>
+      <div class="sidemenu__body">
+        <ul class="sidemenu-keywords">
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">桜</a></li>
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">令和</a></li>
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">テレワーク</a></li>
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">#AprilDream</a></li>
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">電子マネー</a></li>
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">令和</a></li>
+          <li class="sidemenu-keywords__item"><a class="sidemenu-keywords__link" href="#">もっと見る</a></li>
+        </ul>
+      </div>
+    </aside>
   </div>
   <footer class="footer">
     <div class="footer__container">
@@ -424,39 +414,18 @@
           <h3 class="footer__title">レコメンドサービス</h3>
           <div class="footer-list__wrapper">
             <ul class="footer-list">
-              <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMESとは</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">料金・プラン</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">プレスリリースを受信したい方へ</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">プレスリリースを配信したい方へ</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">ログイン</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">無料FAQならTayori</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">無料メールフォームならTayori</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">タスク・プロジェクト管理ツールのJooto</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMES TV</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMES LIVE</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMES MAGAZINE</a></li>
             </ul>
-          </div>
-          <div class="footer-contents">
-            <h3 class="footer-title">レコメンドサービス</h3>
-            <div class="footer-list__wrapper">
-              <ul class="footer-list">
-                <li class="footer-list__item"><a class="footer-list__link" href="#">無料FAQならTayori</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">無料メールフォームならTayori</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">タスク・プロジェクト管理ツールのJooto</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMES TV</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMES LIVE</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">PR TIMES MAGAZINE</a></li>
-              </ul>
-              <ul class="footer-list">
-                <li class="footer-list__item"><a class="footer-list__link" href="#">クリッピング</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">料金・広告ならAdGang</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">無料占い・今週の運勢ならisuta</a></li>
-                <li class="footer-list__item"><a class="footer-list__link" href="#">無料恋愛占いならならisuta</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer-contents">
-            <h3 class="footer-title">PR TIMES公式SNS</h3>
             <ul class="footer-list">
-              <li class="footer-list__item"><a class="footer-list__link" href="#">公式Facebokページ</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">Facebookカテゴリ</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">公式Twitterページ</a></li>
-              <li class="footer-list__item"><a class="footer-list__link" href="#">Twitterカテゴリ</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">クリッピング</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">料金・広告ならAdGang</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">無料占い・今週の運勢ならisuta</a></li>
+              <li class="footer-list__item"><a class="footer-list__link" href="#">無料恋愛占いならならisuta</a></li>
             </ul>
           </div>
         </div>
@@ -468,7 +437,6 @@
             <li class="footer-list__item"><a class="footer-list__link" href="#">公式Twitterページ</a></li>
             <li class="footer-list__item"><a class="footer-list__link" href="#">Twitterカテゴリ</a></li>
           </ul>
-          <p class="footer-copyright">Copyright © PR TIMES Inc. All Rights Reserved.</p>
         </div>
       </div>
       <div class="footer-terms">
